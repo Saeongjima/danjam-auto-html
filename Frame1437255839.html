@@ -38,15 +38,17 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const baseURL = "https://saeongjima.github.io/danjam-auto-html/assets/images/";
-      const images = document.querySelectorAll("img");
+  const baseURL = "https://saeongjima.github.io/danjam-auto-html/assets/images/";
+  const images = document.querySelectorAll("img");
 
-      images.forEach((img) => {
-        if (!img.src.startsWith("http") && !img.src.startsWith("/")) {
-          img.src = baseURL + img.getAttribute("src");
-        }
-      });
-    });
+  images.forEach((img) => {
+    let src = img.getAttribute("src");
+    if (!img.src.startsWith("http") && !img.src.startsWith("/")) {
+      img.src = baseURL + encodeURIComponent(src);
+    }
+  });
+});
+
   </script>
 </head>
 
