@@ -1,0 +1,56 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --background: #f6f6f4;
+  --landuse: #eceeed;
+  --waterway: #cad2d3;
+  --hillshade: rgba(255, 255, 255, 0.01);
+  --building-outline: rgba(223, 223, 221, 0.27);
+  --building: rgba(233, 233, 231, 0.27);
+  --tunnel-street-minor-low: rgba(222, 226, 227, 0);
+  --tunnel-street-minor-case: #e0e6e6;
+  --tunnel-pedestrian: #dee2e3;
+  --tunnel-street-minor: #dee2e3;
+  --road-pedestrian-case: #e8edeb;
+  --road-minor-low: rgba(255, 255, 255, 0);
+  --road-street-low: rgba(255, 255, 255, 0);
+  --road-minor-case: #e8edeb;
+  --road-street-case: #e8edeb;
+  --road-secondary-tertiary-case: #e8edeb;
+  --road-path: #ffffff;
+  --road-pedestrian: #ffffff;
+  --road-minor: #ffffff;
+  --road-street: #ffffff;
+  --road-secondary-tertiary: #ffffff;
+  --bridge-pedestrian-case: #e8edeb;
+  --bridge-street-minor-low: rgba(255, 255, 255, 0);
+  --bridge-street-minor-case: #e8edeb;
+  --bridge-primary-secondary-tertiary-case: #e8edeb;
+  --bridge-path: #ffffff;
+  --bridge-pedestrian: #ffffff;
+  --bridge-street-minor: #ffffff;
+  --bridge-primary-secondary-tertiary: #ffffff;
+  --road-label: #6b6b6b;
+  --waterway-label: #79898b;
+  --poi-label: #8f8f8f;
+
+  /* Fonts */
+  --road-label-font-family: Inter-Regular, sans-serif;
+  --road-label-font-size: 13.950129508972168px;
+  --road-label-line-height: normal;
+  --road-label-font-weight: 400;
+  --road-label-font-style: normal;
+  --waterway-label-font-family: Inter-Regular, sans-serif;
+  --waterway-label-font-size: 13.813471794128418px;
+  --waterway-label-line-height: normal;
+  --waterway-label-font-weight: 400;
+  --waterway-label-font-style: normal;
+  --poi-label-font-family: Inter-Regular, sans-serif;
+  --poi-label-font-size: 12px;
+  --poi-label-line-height: normal;
+  --poi-label-font-weight: 400;
+  --poi-label-font-style: normal;
+
+  /* Effects */
+  --shadow-box-shadow: 0px 2.14px 3.57px 0px rgba(133, 133, 133, 0.25);
+}
