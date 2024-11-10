@@ -37,7 +37,20 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- 이미지 경로를 자동으로 맞춰줌 -->
   <base href="https://saeongjima.github.io/danjam-auto-html/assets/images/">
+
+  <!-- JavaScript로 이미지 경로를 자동으로 설정 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('img');
+      images.forEach((img) => {
+        if (!img.src.startsWith('http')) {
+          img.src = `${document.baseURI}${img.getAttribute('src')}`;
+        }
+      });
+    });
+  </script>
   <div class="frame-1437255839">
     <div class="div">
       <img
