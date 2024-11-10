@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://saeongjima.github.io/danjam-auto-html/assets/css/vars.css">
-  <link rel="stylesheet" href="https://saeongjima.github.io/danjam-auto-html/assets/css/style.css">
-  <base href="https://saeongjima.github.io/danjam-auto-html/assets/images/">
+  <link rel="stylesheet" href="assets/css/vars.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  
   <style>
    a,
    button,
@@ -1868,6 +1866,15 @@
       <img class="phone-mockup-5" src="phone-mockup-50.png" />
     </div>
   </div>
-  
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('img');
+      images.forEach((img) => {
+        if (!img.src.startsWith('http')) {
+          img.src = `https://saeongjima.github.io/danjam-auto-html/assets/images/${img.src.split('/').pop()}`;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
