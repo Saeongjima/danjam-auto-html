@@ -37,6 +37,7 @@
   <title>Document</title>
 </head>
 <body>
+  <base href="https://saeongjima.github.io/danjam-auto-html/assets/images/">
   <div class="frame-1437255839">
     <div class="div">
       <img
@@ -1866,15 +1867,6 @@
       <img class="phone-mockup-5" src="phone-mockup-50.png" />
     </div>
   </div>
-   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const images = document.querySelectorAll('img');
-      images.forEach((img) => {
-        if (!img.src.startsWith('http')) {
-          img.src = `https://saeongjima.github.io/danjam-auto-html/assets/images/${img.src.split('/').pop()}`;
-        }
-      });
-    });
-  </script>
+
 </body>
 </html>
